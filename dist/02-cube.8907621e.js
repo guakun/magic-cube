@@ -189,10 +189,10 @@ var _gua = require('./gua.js');
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 (0, _gua.log)('init cube');
-if (dom && start && pause) {
-	var dom = document.querySelector('.cube');
-	var start = document.querySelector('#start');
-	var pause = document.querySelector('#pause');
+var dom = document.querySelector('.cube');
+var start = document.querySelector('#start');
+var pause = document.querySelector('#pause');
+if (start && pause) {
 	(0, _gua.log)(dom);
 	start.onclick = function () {
 		dom.classList.add('active');
@@ -201,7 +201,7 @@ if (dom && start && pause) {
 		dom.classList.remove('active');
 	};
 }
-},{"./main.css":9,"./gua.js":10}],17:[function(require,module,exports) {
+},{"./main.css":9,"./gua.js":10}],30:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -371,5 +371,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[17,8], null)
+},{}]},{},[30,8], null)
 //# sourceMappingURL=/02-cube.8907621e.map
